@@ -1,0 +1,219 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFEFE;
+  background: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1728px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.header {
+  position: relative;
+  padding: 0 65px;
+}
+
+.header__wrp {
+  display: flex;
+}
+
+.header__wrp-nav {
+  padding: 0 150px 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 175px;
+}
+
+.header__wrp-first-screen {
+  width: 50%;
+  min-height: 800px;
+  padding: 35px 0 0;
+  box-sizing: border-box;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-list a {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #FFFEFE;
+  margin: 0 0 0 50px;
+  text-transform: uppercase;
+}
+
+.header__wrp-first-screen h2 {
+  font-family: inherit;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 110px;
+  color: #801019;
+  display: block;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.header__wrp-first-screen p {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+  margin: 0 0 86px;
+}
+
+.header__desc a {
+  font-family: inherit;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 42px;
+  width: 285px;
+  min-height: 50px;
+  background: #801019;
+  color: #FFFEFE;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__second-screen {
+  padding: 35px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.header__second-screen img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.header__second-screen [type=search] {
+  display: block;
+  height: 30px;
+  width: 260px;
+  padding: 10px;
+  margin: 0 71px 0;
+}
+
+.header__second-screen a {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__second-screen a:first-of-type {
+  margin: 0 27px 0;
+}
+
+.products {
+  padding: 0 65px;
+}
+
+.products h2 {
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 51px;
+}
+
+.ride-us {
+  min-height: 864px;
+  padding: 0 150px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 120px;
+}
+
+.ride-us img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.ride-us a {
+  font-family: inherit;
+  font-size: 100px;
+  font-weight: 700;
+  color: #FFFEFE;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
