@@ -1,6 +1,12 @@
 .header {
   position: relative;
-  padding: 0 65px;
+  padding: 0 96px;
+  margin: 0 0 170px;
+  box-sizing: border-box;
+
+  @include mobile {
+    padding: 0 20px;
+  }
 }
 
 .header__wrp {
@@ -8,21 +14,46 @@
 }
 
 .header__wrp-nav {
-  padding: 0 150px 0 0;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 0 175px;
+  padding: 35px 0;
+  display: grid;
+  width: calc(100% - 300px);
+  max-width: 1728px;
+  position: absolute;
+  grid-template-columns: 90px 400px 1fr;
+  grid-column-gap: 158px;
+
+  @include desktop-min-width {
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 90px 1fr;
+  }
+
+  @include tablet {
+    grid-column-gap: 71px;
+  }
 }
 
 .header__wrp-first-screen {
   width: 50%;
   min-height: 800px;
-  padding: 35px 0 0;
+  padding: 300px 0 0;
   box-sizing: border-box;
+
+}
+
+.header__nav-list-wrp {
+  @include desktop-min-width {
+    grid-row-start: 2;
+    grid-row-start: 3;
+  }
 }
 
 .header__nav-list {
   display: flex;
+  gap: 50px;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .header__nav-list a {
@@ -31,7 +62,6 @@
   font-weight: 500;
   line-height: 18px;
   color: #FFFEFE;
-  margin: 0 0 0 50px;
   text-transform: uppercase;
 }
 
@@ -82,22 +112,57 @@
   right: 0;
   top: 0;
   z-index: -1;
+  width: 50%;
+  max-width: 1043px;
+  height: 800px;
+  object-fit: cover;
+
+  @include desktop-min-width {
+    width: 100%;
+    max-width: initial;
+    ;
+  }
 }
 
-.header__second-screen [type="search"] {
+.header__wrp-nav [type="search"] {
   display: block;
   height: 30px;
   width: 260px;
   padding: 10px;
-  margin: 0 71px 0;
+  margin: 0 71px 0 0;
 }
 
-.header__second-screen a {
+.header__wrp-nav a {
   height: 30px;
   display: flex;
   align-items: center;
 }
 
-.header__second-screen a:first-of-type {
-  margin: 0 27px 0;
+.header__search {
+  display: flex;
+  justify-content: flex-end;
+
+  @include tablet {
+    grid-row-start: 1;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    justify-content: flex-start;
+  }
+}
+
+.header__search a:first-of-type {
+  margin: 0 21px 0 0;
+}
+
+.header__links {
+  display: flex;
+
+  @include desktop-min-width {
+    flex-direction: column;
+  }
+}
+
+.header__links img {
+  margin: 0 148px 0 0;
 }

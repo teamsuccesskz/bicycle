@@ -1,5 +1,9 @@
 .products {
-  padding: 0 65px;
+  padding: 0 96px;
+
+  @include tablet {
+    padding: 0 20px;
+  }
 }
 
 .products h2 {
