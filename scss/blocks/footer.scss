@@ -1,9 +1,9 @@
 .footer {
   background: #282828;
-  padding: 91px 96px 104px;
+  padding: 91px 0 104px;
 
   @include tablet {
-    padding: 50px 20px 0;
+    padding: 50px 0 0;
   }
 }
 
@@ -89,8 +89,9 @@
 
 .footer__social-wrp {
   display: flex;
+  align-items: center;
 }
 
 .footer__social-wrp span {
-  margin: 0 0 81px;
+  margin: 0 81px 0 0;
 }

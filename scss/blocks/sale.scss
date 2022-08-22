@@ -1,6 +1,6 @@
 .sale {
-  background: #801019;
-  margin: 0 0 314px;
+  padding: 110px 0 112px;
+  overflow: hidden;
 }
 
 .sale h2 {
@@ -11,10 +11,13 @@
   text-transform: uppercase;
 
   @include desktop-min-width {
-    font-family: Roboto;
     font-size: 25px;
     font-weight: 700;
     line-height: 28px;
+  }
+
+  @include tablet {
+    width: 124px;
   }
 }
 
@@ -25,6 +28,7 @@
   min-height: 500px;
   justify-content: space-between;
   padding: 0 113px 0 104px;
+  background: #801019;
 
   @include desktop-min-width {
     min-height: 300px;

@@ -1,9 +1,8 @@
 .reviewed {
-  margin: 0 0 170px;
-  padding: 0 96px;
+  padding: 314px 0 170px;
 
-  @include tablet {
-    padding: 0 20px;
+  @include desktop-max-width {
+    padding: 97px 0 50px;
   }
 }
 
@@ -13,5 +12,9 @@
   font-weight: 700;
   line-height: 55px;
   margin: 0 0 33px;
-  text-transform: uppercase;
+}
+
+.reviewed--catalog {
+  padding: 50px 0;
+  background: #282828;;
 }

@@ -1,10 +1,8 @@
 .city-bike {
-  margin: 0 0 280px;
-  padding: 0 96px;
+  padding: 170px 96px 280px;
 
   @include desktop-min-width {
-    margin: 0 0 150px;
-    padding: 0 0 20px;
+    padding: 50px 0 97px 20px;
   }
 }
 

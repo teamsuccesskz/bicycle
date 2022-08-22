@@ -1,6 +1,23 @@
 .slider {
   padding: 0 21px;
-  margin: 0 0 126px;
+}
+
+.slider--favourite {
+  width: 60%;
+  margin: 0 158px 0 0;
+  padding: 183px 21px 51px 21px;
+  max-width: 1000px;
+  box-sizing: border-box;
+
+  @include desktop-max-width {
+    margin: 0 15% 0 0;
+  }
+
+  @include  desktop-min-width {
+    margin: 0;
+    max-width: initial;
+    width: 100%;
+  }
 }
 
 .slider__btn {
