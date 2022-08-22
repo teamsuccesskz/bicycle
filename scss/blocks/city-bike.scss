@@ -36,6 +36,17 @@
   font-weight: 500;
   line-height: 15px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: #801019;
+    background: #FFFEFE;
+  }
+
 }
 
 .city-bike img {

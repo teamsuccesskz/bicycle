@@ -95,6 +95,18 @@
   background: #801019;
   color: #FFFEFE;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    color: #801019;
+    background: #FFFEFE;
+  }
+
 }
 
 

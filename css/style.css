@@ -135,8 +135,9 @@ a {
 }
 
 .header__nav-list {
+  width: 400px;
+  justify-content: space-between;
   display: flex;
-  gap: 50px;
 }
 @media (max-width: 1030px) {
   .header__nav-list {
@@ -151,6 +152,12 @@ a {
   line-height: 18px;
   color: #FFFEFE;
   text-transform: uppercase;
+}
+.header__nav-list a:hover, .header__nav-list a:focus {
+  opacity: 0.8;
+}
+.header__nav-list a:active {
+  color: #801019;
 }
 
 .header__wrp-first-screen h2 {
@@ -174,9 +181,9 @@ a {
 
 .header__desc a {
   font-family: inherit;
-  font-size: 35px;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 20px;
   width: 285px;
   min-height: 50px;
   background: #801019;
@@ -185,6 +192,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.header__desc a:hover, .header__desc a:focus {
+  opacity: 0.8;
+}
+.header__desc a:active {
+  color: #801019;
+  background: #FFFEFE;
 }
 
 .header__second-screen {
@@ -214,6 +228,7 @@ a {
 
 .header__wrp-nav [type=search] {
   display: block;
+  border: none;
   height: 30px;
   width: 260px;
   padding: 10px;
@@ -238,6 +253,11 @@ a {
     grid-column-end: -1;
     justify-content: flex-start;
   }
+}
+
+.header__search a:hover,
+.header__search a:focus {
+  opacity: 0.8;
 }
 
 .header__search a:first-of-type {
@@ -265,28 +285,40 @@ a {
   padding: 100px 199px 0 199px;
   background: #FFFEFE;
   display: flex;
+  box-sizing: border-box;
   position: relative;
 }
 @media (max-width: 1400px) {
   .header__catalog-nav {
-    padding: 170px 20px 0 20px;
+    padding: 153px 20px 0 20px;
+  }
+}
+@media (max-width: 1030px) {
+  .header__catalog-nav {
+    padding: 143px 20px 0 20px;
   }
 }
 
 .header__catalog-nav a {
-  padding: 21px 100px 0 0;
+  padding: 21px 100px 21px 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
   text-transform: uppercase;
   margin: 0 270px 0 0;
+  color: #000000;
 }
 .header__catalog-nav a:hover {
   color: #801019;
 }
 @media (max-width: 1400px) {
   .header__catalog-nav a {
-    margin: 0 100px 0 0;
+    margin: 0 80px 0 0;
+  }
+}
+@media (max-width: 1030px) {
+  .header__catalog-nav a {
+    margin: 0;
   }
 }
 
@@ -297,7 +329,18 @@ a {
 
 .header__catalog-nav-list {
   display: flex;
-  gap: 100px;
+  width: 625px;
+  justify-content: space-between;
+}
+@media (max-width: 1400px) {
+  .header__catalog-nav-list {
+    flex-grow: 1;
+  }
+}
+@media (max-width: 1030px) {
+  .header__catalog-nav-list {
+    display: none;
+  }
 }
 
 .header__catalog-nav-list a {
@@ -341,6 +384,11 @@ a {
   padding: 0 0 70px;
   box-sizing: border-box;
 }
+@media (max-width: 1030px) {
+  .header__catalog-offer-wrp {
+    min-height: 400px;
+  }
+}
 
 .header__catalog-offer-img {
   position: relative;
@@ -378,8 +426,8 @@ a {
 
 .header__catalog-categories {
   position: absolute;
-  bottom: -590px;
-  z-index: 1;
+  bottom: -588px;
+  z-index: 3;
   display: none;
 }
 
@@ -394,9 +442,13 @@ a {
 
 .header__sub-catalog-categories {
   position: absolute;
-  bottom: 111px;
-  left: 300px;
+  bottom: 196px;
+  display: none;
+  left: 390px;
   z-index: 1;
+}
+.header__sub-catalog-categories:hover {
+  display: block;
 }
 
 .header__catalog-categories a {
@@ -412,6 +464,10 @@ a {
 .header__catalog-categories a:hover {
   opacity: 0.8;
   color: #FFFEFE;
+}
+
+.header__catalog-categories a:hover + .header__sub-catalog-categories {
+  display: block;
 }
 
 .products {
@@ -533,6 +589,14 @@ a {
   background: #801019;
   color: #FFFEFE;
   text-transform: uppercase;
+  cursor: pointer;
+}
+.slider__item button:hover, .slider__item button:focus {
+  opacity: 0.8;
+}
+.slider__item button:active {
+  color: #801019;
+  background: #FFFEFE;
 }
 
 .ride-us {
@@ -620,6 +684,13 @@ a {
   font-weight: 500;
   line-height: 15px;
   text-transform: uppercase;
+}
+.city-bike a:hover, .city-bike a:focus {
+  opacity: 0.8;
+}
+.city-bike a:active {
+  color: #801019;
+  background: #FFFEFE;
 }
 
 .city-bike img {
@@ -862,6 +933,12 @@ a {
   margin: 0 0 59px;
   text-transform: uppercase;
 }
+.footer__nav-list a:hover, .footer__nav-list a:focus {
+  opacity: 0.8;
+}
+.footer__nav-list a:active {
+  color: #801019;
+}
 @media (max-width: 1030px) {
   .footer__nav-list a {
     font-size: 11px;
@@ -923,6 +1000,14 @@ a {
   justify-content: center;
   border: none;
   color: #FFFEFE;
+  cursor: pointer;
+}
+.footer__form button:hover, .footer__form button:focus {
+  opacity: 0.8;
+}
+.footer__form button:active {
+  color: #801019;
+  background: #FFFEFE;
 }
 
 .footer__social-list {
@@ -932,6 +1017,9 @@ a {
 .footer__social-list a {
   display: block;
   margin: 0 30px 0 0;
+}
+.footer__social-list a:hover, .footer__social-list a:focus {
+  opacity: 0.8;
 }
 
 .footer__social-wrp {
