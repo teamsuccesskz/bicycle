@@ -154,7 +154,7 @@ a {
   text-transform: uppercase;
 }
 .header__nav-list a:hover, .header__nav-list a:focus {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .header__nav-list a:active {
   color: #801019;
@@ -1018,6 +1018,11 @@ a {
     margin: 0 50px 0 0;
   }
 }
+@media (max-width: 1030px) {
+  .information__images {
+    display: none;
+  }
+}
 
 .information__images img {
   margin: 0 0 8px;
@@ -1029,6 +1034,11 @@ a {
 
 .information__text-wrp {
   margin: 0 0 170px;
+}
+@media (max-width: 1030px) {
+  .information__text-wrp {
+    margin: 0 0 50px;
+  }
 }
 
 .information__text-wrp:last-child {
@@ -1108,6 +1118,11 @@ a {
   align-items: flex-end;
   justify-content: space-between;
 }
+@media (max-width: 1030px) {
+  .review__wrp {
+    flex-direction: column;
+  }
+}
 
 .review__list {
   width: 50%;
@@ -1115,6 +1130,11 @@ a {
 @media (max-width: 1400px) {
   .review__list {
     width: 60%;
+  }
+}
+@media (max-width: 1030px) {
+  .review__list {
+    width: 100%;
   }
 }
 
@@ -1180,7 +1200,7 @@ a {
 }
 @media (max-width: 1030px) {
   .product-card {
-    padding: 55px 0 0 0;
+    padding: 55px 0;
   }
 }
 
@@ -1202,6 +1222,11 @@ a {
 .product-card__info-wrp {
   display: flex;
 }
+@media (max-width: 1400px) {
+  .product-card__info-wrp {
+    flex-direction: column;
+  }
+}
 
 .product-card__img-wrp {
   background: #FFFEFE;
@@ -1210,6 +1235,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 1400px) {
+  .product-card__img-wrp {
+    width: 100%;
+    margin: 0 0 50px;
+  }
 }
 
 .product-card__img-wrp img {
@@ -1255,6 +1286,13 @@ a {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+}
+.product-card__form-radio-wrp label:hover, .product-card__form-radio-wrp label:focus {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.product-card__form-radio-wrp label:active {
+  background: #FFFEFE;
 }
 
 .product-card__form-radio-wrp label {
@@ -1304,14 +1342,12 @@ a {
   justify-content: center;
   cursor: pointer;
   width: 100%;
-  border: none;
   background: #FFFEFE;
   color: #801019;
 }
 .product-card__form button:hover, .product-card__form button:focus {
   background: #801019;
   color: #FFFEFE;
-  outline: #FFFEFE;
 }
 
 .product-card__form-title-wrp button {
@@ -1348,7 +1384,7 @@ a {
   text-transform: uppercase;
 }
 .footer__nav-list a:hover, .footer__nav-list a:focus {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 .footer__nav-list a:active {
   color: #801019;
@@ -1434,7 +1470,7 @@ a {
   margin: 0 30px 0 0;
 }
 .footer__social-list a:hover, .footer__social-list a:focus {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .footer__social-wrp {
