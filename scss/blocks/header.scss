@@ -121,12 +121,11 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    background: #290500;
   }
 
   &:active {
-    color: #801019;
-    background: #FFFEFE;
+    background: #f70a27;
   }
 }
 
@@ -225,6 +224,7 @@
 }
 
 .header__catalog-nav a {
+  font-family: inherit;
   padding: 21px 100px 21px 0;
   font-size: 16px;
   font-weight: 500;
@@ -269,6 +269,7 @@
 
 
 .header__catalog-nav-list a {
+  font-family: inherit;
   display: block;
   padding: 21px 0;
   margin: 0;
@@ -286,6 +287,10 @@
   line-height: 110px;
   text-transform: uppercase;
   color: #FFFEFE;
+
+  @include  desktop-max-width {
+    font-size: 4vw;
+  }
 
   @include desktop-min-width {
     font-size: 25px;
@@ -385,7 +390,7 @@
   margin: 0 0 6px;
 
   &:hover {
-    opacity: 0.8;
+    background: #290500;
     color: #FFFEFE;
   }
 }
@@ -393,6 +398,53 @@
 .header__catalog-categories a:hover + .header__sub-catalog-categories {
   display: block;
 }
+
+.header__inner {
+  background: #000;
+  
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__inner-breadcrumbs-list {
+  display: flex;
+
+  padding: 38px 0;
+}
+
+.header__inner-breadcrumbs-list a {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15px;
+
+  color: #FFFEFE;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: #801019;
+  }
+
+  &:active {
+    color: #f70a27;
+  }
+}
+
+.header__inner-breadcrumbs-list li:last-child a {
+  color: #801019;
+  
+  &:hover,
+  &:focus {
+    color: #FFFEFE;
+  }
+
+  &:active {
+    color: #f70a27;
+  }
+}
+
 
 
 
