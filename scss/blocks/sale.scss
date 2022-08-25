@@ -10,6 +10,10 @@
   line-height: 110px;
   text-transform: uppercase;
 
+  @include desktop-max-width {
+    font-size: 5vw;
+  }
+
   @include desktop-min-width {
     font-size: 25px;
     font-weight: 700;

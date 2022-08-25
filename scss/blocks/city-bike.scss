@@ -6,6 +6,15 @@
   }
 }
 
+.city-bike__slide-wrp  {
+  display: flex;
+
+  @include desktop-min-width {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 .city-bike h2 {
   font-family: inherit;
   font-size: 50px;
@@ -14,12 +23,13 @@
   margin: 0 0 51px;
 }
 
-.city-bike p {
+.city-bike p:first-of-type {
   font-family: inherit;
   font-size: 18px;
   line-height: 25px;
   font-weight: 400;
   margin: 0 0 40px;
+  width: 100%;
 }
 
 .city-bike a {
@@ -39,21 +49,22 @@
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+      background: #290500;
   }
 
   &:active {
-    color: #801019;
-    background: #FFFEFE;
+    background: #f70a27;
   }
 
 }
 
 .city-bike img {
-  width: 100%;
+  width: 50%;
   height: auto;
+  margin: 0 202px 0 0;
 
-  @include tablet {
+  @include desktop-max-width {
+    width: 100%;
     margin: 0 0 21px;
   }
 }
@@ -76,7 +87,7 @@
 }
 
 .city-bike__content {
-  width: 34%;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;

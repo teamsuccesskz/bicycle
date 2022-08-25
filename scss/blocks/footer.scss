@@ -73,6 +73,7 @@
   width: 337px;
   padding: 10px;
   box-sizing: border-box;
+  border: none;
 }
 
 .footer__form button {
@@ -86,15 +87,15 @@
   border: none;
   color: #FFFEFE;
   cursor: pointer;
+  box-sizing: border-box;
 
   &:hover,
   &:focus {
-    opacity: 0.8;
+    background: #290500;
   }
 
   &:active {
-    color: #801019;
-    background: #FFFEFE;
+    background: #f70a27;
   }
 }
 
