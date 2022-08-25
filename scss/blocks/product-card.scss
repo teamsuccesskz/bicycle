@@ -2,7 +2,7 @@
   padding: 132px 0;
 
   @include tablet {
-    padding: 55px 0 0 0;
+    padding: 55px 0;
   }
 }
 
@@ -22,6 +22,10 @@
 
 .product-card__info-wrp {
   display: flex;
+
+  @include desktop-min-width {
+    flex-direction: column;
+  }
 }
 
 .product-card__img-wrp {
@@ -31,6 +35,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include desktop-min-width {
+    width: 100%;
+    margin: 0 0 50px;
+  }
 }
 
 .product-card__img-wrp img {
@@ -76,6 +85,16 @@
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  &:active {
+    background: #FFFEFE;
+  }
 }
 
 .product-card__form-radio-wrp label {
@@ -125,7 +144,6 @@
   justify-content: center;
   cursor: pointer;
   width: 100%;
-  border: none;
   background: #FFFEFE;
   color: #801019;
 
@@ -133,7 +151,6 @@
   &:focus {
     background: #801019;
     color: #FFFEFE;
-    outline: #FFFEFE;
   }
 }
 
