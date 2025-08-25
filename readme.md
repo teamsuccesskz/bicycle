@@ -22,10 +22,10 @@ The main goal is to provide a modern, lightweight, and user-friendly foundation 
 
 ## 📄 Pages
 
-- **Home** — [`index.html`](index.html)  
-- **Catalog (main section)** — [`catalog.html`](catalog.html)  
-- **Product List (example: Mountain Bikes)** — [`catalog-list.html`](catalog-list.html)  
-- **Single Product Page** — [`product.html`](product.html)  
+- **Home** — [`index.html`](https://teamsuccesskz.github.io/bicycle/)  
+- **Catalog (main section)** — [`catalog.html`](https://teamsuccesskz.github.io/bicycle/catalog.html)  
+- **Product List** — [`catalog-list.html`](https://teamsuccesskz.github.io/bicycle/catalog.html)  
+- **Single Product Page** — [`product.html`](https://teamsuccesskz.github.io/bicycle/product.html)  
 
 ---
 
