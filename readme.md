@@ -24,7 +24,7 @@ The main goal is to provide a modern, lightweight, and user-friendly foundation 
 
 - **Home** — [`index.html`](https://teamsuccesskz.github.io/bicycle/)  
 - **Catalog (main section)** — [`catalog.html`](https://teamsuccesskz.github.io/bicycle/catalog.html)  
-- **Product List** — [`catalog-list.html`](https://teamsuccesskz.github.io/bicycle/catalog.html)  
+- **Product List** — [`catalog-list.html`](https://teamsuccesskz.github.io/bicycle/section.html)  
 - **Single Product Page** — [`product.html`](https://teamsuccesskz.github.io/bicycle/product.html)  
 
 ---
